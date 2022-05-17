@@ -22,7 +22,7 @@ body {
 }
 
 /* H */
-h1, h2, h3 {
+h2, h3 {
     color: white;
     font-family: 'Poppins', sans-serif;
 }
@@ -149,25 +149,79 @@ nav ul li a:hover::after {
 }
 
 /* Párrafos */
-.parrafo-presentacion, .parrafo-general {
+.parrafo-presentacion {
     color: white;
     font-family: 'Judson', serif;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     
 }
+
+.parrafo-general {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.velmontStrong {
+    color: #d19f68;
+    font-weight: 500;
+}
+
+.velmontCierre {
+    font-weight: 600;
+}
+
+.nosotros--imagen {
+    width: 100%;
+}
+
+.parrafo-general h4{
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: -0.5em;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.titulo {
+    color: #d19f68;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 3.8rem;
+}
+
 .parrafo-presentacion{
     text-align: center;
     background-color: rgba(58, 42, 42, 0.712);
 }
-.parrafo-general {
-    text-align: left;
+
+
+.trabajosTextos {
+    width: auto;
+    color: white;
 }
 
-.historia {
-    border: 2px, solid, white;
+.trabajosContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between ;
+    align-content: space-between;
 }
 
-.servicios {
+.trabajos--imagenes {
+    width: 30%;
+    margin-bottom: 2rem;
+    
+}
+
+ 
+
+.servicios, .opinionesContainer {
     background-image: url(img/minibar_velmont.webp);
     background-size: cover;
     background-repeat: no-repeat;
@@ -215,19 +269,20 @@ nav ul li a:hover::after {
     transform: translateX(5rem);
 }
 
+
+
 .opinionesContainer {
-    width: 100vw;
+    width: 100%;
+
     height: 85vh;
-    /* background-color: #000; */
-    background-image: url(img/fondo_velmont_gradiente.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+   
     display: flex;
     flex-direction: column;
     align-content: space-around;
     padding-top: 3%;
 }
+
+
 
 .comillas {
     width: 7em;
@@ -246,6 +301,7 @@ nav ul li a:hover::after {
     font-family: 'Judson', serif;
     font-size: 1.5rem;
     width: 70%;
+    height: auto;
     margin: 0 15%;
 
 }
@@ -260,7 +316,7 @@ nav ul li a:hover::after {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%;
+    width: 80%;
 }
 
 .opinionFila {
@@ -271,7 +327,7 @@ nav ul li a:hover::after {
     flex-direction: row;
     justify-content: space-evenly;
     align-content: space-around;
-    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
 
 }
 
@@ -426,7 +482,7 @@ hr {
 
 
 @media (max-width: 768px) {
-    ul {
+    .linksNavBar {
         position: fixed;
         top: 170px;
         background-color: white;
@@ -456,7 +512,7 @@ hr {
         font-family: 'Poppins', sans-serif;
         font-size: 2rem;
         font-weight: 400;
-        color: black;
+        color: white;
     }
 
     #burger {
@@ -491,6 +547,33 @@ hr {
     nav ul li {
         margin: 20px;
         color: white;
+    }
+
+    .parrafo-general h4{
+        color: #000;
+        font-size: 1.6rem;
+        width: max-content;
+        background-color: rgba(255, 255, 255, 0.1);
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        margin-bottom: 0.5em;
+    }
+
+    .titulo {
+        color: #d19f68;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+    }
+
+    .parrafo-general {
+        color: white;
+        font-size: 1rem;
+        font-weight: 300;
+        margin-top: 1rem;
+        font-family: 'Poppins', sans-serif;
+        text-align: justify;
     }
 
     footer {
